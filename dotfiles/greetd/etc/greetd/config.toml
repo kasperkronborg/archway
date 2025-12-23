@@ -2,5 +2,5 @@
 vt = 1
 
 [default_session]
-command = "tuigreet --cmd bash"
+command = "tuigreet --cmd hyprland"
 user = "greeter"
