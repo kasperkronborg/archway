@@ -7,6 +7,9 @@ set -e
 echo "Installing greetd and tuigreet..."
 sudo pacman -S --noconfirm --needed greetd greetd-tuigreet
 
+echo "Backing up existing greetd config..."
+sudo mv /etc/greetd/config.toml /etc/greetd/config.toml.backup 2>/dev/null || true
+
 echo "Deploying greetd configuration..."
 cd "$(dirname "$0")/.." # Go to archway root
 sudo stow -d dotfiles -t / greetd
