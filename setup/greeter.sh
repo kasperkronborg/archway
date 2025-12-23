@@ -9,7 +9,7 @@ sudo pacman -S --noconfirm --needed greetd greetd-tuigreet
 
 echo "Deploying greetd configuration..."
 cd "$(dirname "$0")/.." # Go to archway root
-sudo stow -d dotfiles -t / greetd
+sudo stow --adopt -d dotfiles -t / greetd
 
 echo "Enabling greetd service..."
 sudo systemctl enable greetd
