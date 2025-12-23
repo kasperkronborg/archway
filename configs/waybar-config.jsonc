@@ -1,0 +1,7 @@
+{
+  "layer": "bottom",
+  "modules-center": ["hyprland/workspaces"],
+  "hyprland/workspaces": {
+    "active-only": true,
+  },
+}

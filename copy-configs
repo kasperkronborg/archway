@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+mkdir -p ~/.config/hypr
+cp "$SCRIPT_DIR/configs/hypr-hyprland.conf" ~/.config/hypr/hyprland.conf
+
+mkdir -p ~/.config/gtk-3.0
+mkdir -p ~/.config/gtk-4.0
+cp "$SCRIPT_DIR/configs/gtk-3.0-settings.ini" ~/.config/gtk-3.0/settings.ini
+cp "$SCRIPT_DIR/configs/gtk-4.0-settings.ini" ~/.config/gtk-4.0/settings.ini
+
+mkdir -p ~/.config/zed
+cp "$SCRIPT_DIR/configs/zed-settings.json" ~/.config/zed/settings.json
+
+mkdir -p ~/.config/ghostty
+cp "$SCRIPT_DIR/configs/ghostty-config" ~/.config/ghostty/config
+
+mkdir -p ~/.config/waybar
+cp "$SCRIPT_DIR/configs/waybar-config.jsonc" ~/.config/waybar/config.jsonc
+
+echo "Configs copied successfully"

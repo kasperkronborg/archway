@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+sudo pacman -S --noconfirm --needed git less
+sudo pacman -S --noconfirm --needed ttc-iosevka
+
+git config --global init.defaultBranch "main"
+git config --global user.email "kasper@kronborg.info"
+git config --global user.name "Kasper Kronborg"

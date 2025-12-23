@@ -1,0 +1,6 @@
+theme = "Catppuccin Frappe"
+
+font-family = "IosevkaTerm"
+font-size = 15.0
+font-style = "Light"
+font-style-bold = "Regular"

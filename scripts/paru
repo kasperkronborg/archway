@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Check if paru is already installed
+if command -v paru &> /dev/null; then
+    echo "Paru is already installed"
+    exit 0
+fi
+
+ORIGINAL_DIR=$(pwd)
+
+sudo pacman -S --noconfirm --needed git base-devel
+
+cd /tmp
+git clone https://aur.archlinux.org/paru.git
+
+cd paru
+makepkg -si --noconfirm
+
+rm -rf /tmp/paru
+
+cd "$ORIGINAL_DIR"
+
+echo "Paru installed successfully!"

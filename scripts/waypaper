@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+if ! command -v paru &> /dev/null; then
+    echo "Paru not found. Would you like to install it? (y/n)"
+
+    read -r response
+    if [[ "$response" == "y" ]]; then
+        "$AW_DIR/scripts/paru"
+    else
+        echo "Cannot install waypaper without paru"
+        exit 1
+    fi
+fi
+
+paru -S --noconfirm --needed waypaper
