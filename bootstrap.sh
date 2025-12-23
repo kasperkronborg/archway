@@ -7,10 +7,10 @@ set -e
 ARCHWAY_DIR="${1:-$HOME/archway}"
 
 echo "Installing git..."
-sudo pacman -S --noconfirm --needed git
+sudo pacman -S --noconfirm --needed git less
 
 echo "Cloning archway to $ARCHWAY_DIR..."
-git clone https://github.com/YOUR_USERNAME/archway.git "$ARCHWAY_DIR"
+git clone https://github.com/kasperkronborg/archway.git "$ARCHWAY_DIR"
 
 echo ""
 echo "Bootstrap complete!"
