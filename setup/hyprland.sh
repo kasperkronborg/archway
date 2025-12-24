@@ -5,7 +5,9 @@
 set -e
 
 echo "Installing Hyprland..."
-sudo pacman -S --noconfirm --needed hyprland
+sudo pacman -S --noconfirm --needed \
+    hyprland \
+    ghostty
 
 echo ""
 echo "Hyprland installation complete!"
