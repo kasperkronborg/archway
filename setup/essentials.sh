@@ -10,7 +10,8 @@ sudo pacman -S --noconfirm --needed \
     wget \
     man-db \
     stow \
-    vi
+    vi \
+    terminus-font
 
 echo ""
 echo "Essential tools installed!"
