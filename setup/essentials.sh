@@ -9,7 +9,8 @@ sudo pacman -S --noconfirm --needed \
     base-devel \
     wget \
     man-db \
-    stow
+    stow \
+    vi
 
 echo ""
 echo "Essential tools installed!"
