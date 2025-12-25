@@ -9,7 +9,8 @@ ARCHWAY_DIR="${ARCHWAY_DIR:-$HOME/archway}"
 echo "Installing Hyprland..."
 sudo pacman -S --noconfirm --needed \
     hyprland \
-    ghostty
+    ghostty \
+    firefox
 
 echo "Deploying Hyprland configuration..."
 cd "$ARCHWAY_DIR"
