@@ -13,5 +13,21 @@ sudo pacman -S --noconfirm --needed \
     vi \
     terminus-font
 
+# Check if paru is already installed
+if command -v paru &> /dev/null; then
+    echo "Paru is already installed"
+    exit 0
+fi
+
+cd /tmp
+git clone https://aur.archlinux.org/paru.git
+
+cd paru
+makepkg -si --noconfirm
+
+rm -rf /tmp/paru
+
+cd ~/archway
+
 echo ""
 echo "Essential tools installed!"
