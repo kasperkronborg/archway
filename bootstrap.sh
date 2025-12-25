@@ -9,6 +9,9 @@ ARCHWAY_DIR="${1:-$HOME/archway}"
 echo "Installing git..."
 sudo pacman -S --noconfirm --needed git less
 
+git config --global user.email "kasper@kronborg.dev"
+git config --global user.name "Kasper Kronborg"
+
 echo "Cloning archway to $ARCHWAY_DIR..."
 git clone https://github.com/kasperkronborg/archway.git "$ARCHWAY_DIR"
 

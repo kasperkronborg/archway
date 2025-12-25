@@ -11,7 +11,8 @@ sudo pacman -S --noconfirm --needed \
     man-db \
     stow \
     vi \
-    terminus-font
+    terminus-font \
+    openssh
 
 # Check if paru is already installed
 if command -v paru &> /dev/null; then
