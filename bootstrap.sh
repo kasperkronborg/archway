@@ -13,7 +13,7 @@ git config --global user.email "kasper@kronborg.dev"
 git config --global user.name "Kasper Kronborg"
 
 echo "Cloning archway to $ARCHWAY_DIR..."
-git clone https://github.com/kasperkronborg/archway.git "$ARCHWAY_DIR"
+git clone git@github.com:kasperkronborg/archway.git "$ARCHWAY_DIR"
 
 echo ""
 echo "Bootstrap complete!"
