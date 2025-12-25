@@ -12,6 +12,9 @@ sudo pacman -S --noconfirm --needed \
     ghostty \
     firefox
 
+paru -S --noconfirm --needed \
+    1password
+
 echo "Deploying Hyprland configuration..."
 cd "$ARCHWAY_DIR"
 stow -d dotfiles -t "$HOME" hyprland
