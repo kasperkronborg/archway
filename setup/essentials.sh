@@ -12,7 +12,8 @@ sudo pacman -S --noconfirm --needed \
     stow \
     vi \
     terminus-font \
-    openssh
+    openssh \
+    wl-clipboard
 
 # Check if paru is already installed
 if command -v paru &> /dev/null; then
