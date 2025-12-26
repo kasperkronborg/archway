@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -e
+
+CONFIG_FILE="/etc/pacman.conf"
+
+enable_option() {
+    local option=$1
+
+    # Check if option exists (commented or uncommented)
+    if grep -q "^#\?${option}" "$CONFIG_FILE"; then
+    	# Option exists, check if it's as a comment
+	if grep -q "^#${option}" "$CONFIG_FILE"; then
+	    echo "Uncommenting ${option}..."
+	    sudo sed -i "s/^#${option}/${option}/" "$CONFIG_FILE"
+	else
+	    echo "${option} is already enabled"
+	fi
+    else
+	# Option doesn't exist, add it under [options]
+	echo "Adding ${option} under [options]..."
+	sudo sed -i "/^\[options\]/a ${option}" "$CONFIG_FILE"
+    fi
+}
+
+enable_option "Color"
+enable_option "VerbosePkgLists"
+
+echo "Done! Pacman configuration updated."
