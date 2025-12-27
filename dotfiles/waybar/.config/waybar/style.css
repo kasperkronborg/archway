@@ -1,0 +1,17 @@
+window#waybar {
+    background-color: transparent;
+}
+
+label.module {
+    background-color: #1e1e2e;
+    border-radius: 34px;
+    font-family: "JetBrainsMono Nerd Font";
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#clock {
+    color: #cdd6f4;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+}

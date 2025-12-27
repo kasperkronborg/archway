@@ -14,7 +14,9 @@ sudo pacman -S --noconfirm --needed \
     terminus-font \
     ttf-jetbrains-mono-nerd \
     openssh \
-    wl-clipboard
+    wl-clipboard \
+    slurp \
+    dunst libnotify
 
 # Check if paru is already installed
 if command -v paru &> /dev/null; then

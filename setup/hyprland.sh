@@ -9,6 +9,8 @@ ARCHWAY_DIR="${ARCHWAY_DIR:-$HOME/archway}"
 echo "Installing Hyprland..."
 sudo pacman -S --noconfirm --needed \
     hyprland \
+    waybar otf-font-awesome \
+    rofi \
     ghostty \
     firefox
 
@@ -17,7 +19,7 @@ paru -S --noconfirm --needed \
 
 echo "Deploying Hyprland configuration..."
 cd "$ARCHWAY_DIR"
-stow -d dotfiles -t "$HOME" hyprland ghostty gtk
+stow -d dotfiles -t "$HOME" hyprland waybar ghostty gtk
 
 echo ""
 echo "Hyprland installation complete!"
