@@ -19,7 +19,7 @@ paru -S --noconfirm --needed \
 
 echo "Deploying Hyprland configuration..."
 cd "$ARCHWAY_DIR"
-stow -d dotfiles -t "$HOME" hyprland waybar ghostty gtk
+stow -d dotfiles -t "$HOME" hyprland waybar rofi ghostty gtk
 
 echo ""
 echo "Hyprland installation complete!"

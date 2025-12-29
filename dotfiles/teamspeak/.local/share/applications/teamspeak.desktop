@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TeamSpeak
+Comment=TeamSpeak Voice Chat
+Exec=/opt/ts/TeamSpeak
+Icon=/opt/ts/logo-256.png
+Terminal=false
+Categories=Network;InstantMessaging;

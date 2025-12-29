@@ -1,0 +1,74 @@
+configuration {
+  modes: [ window, drun ];
+}
+
+* {
+    text: #cdd6f4;
+    subtext1: #a6adc8;
+    surface0: #313244;
+    base: #1e1e2e;
+    mantle: #181825;
+}
+
+window {
+    background-color: var(mantle);
+    border: 2;
+    border-color: #cba6f7;
+    border-radius: 8px;
+    font: "JetBrainsMono Nerd Font 12";
+    padding: 18px;
+    width: 25%;
+}
+
+inputbar {
+    children: [ entry ];
+    padding: 0;
+}
+
+listview {
+    border: 0;
+    lines: 5;
+    padding: 16px 0 0;
+    scrollbar: false;
+    spacing: 4px;
+}
+
+scrollbar {
+    handle-width: 4px;
+}
+
+entry {
+    background-color: var(base);
+    border-radius: 4px;
+    font: "JetBrainsMono Nerd Font 16";
+    padding: 8px;
+    placeholder: "Search for apps...";
+    placeholder-color: var(surface0);
+    text-color: var(text);
+}
+
+element {
+    children: [ element-icon, element-text ];
+    padding: 8px;
+    spacing: 8px;
+    border-radius: 4px;
+}
+element normal.normal {
+    background-color: var(mantle);
+}
+element alternate.normal {
+    background-color: var(mantle);
+}
+element selected.normal {
+    background-color: var(surface0);
+}
+
+element-icon {
+    size: 1.5em;
+}
+
+element-text {
+    highlight: None;
+    text-color: var(text);
+    vertical-align: 0.5;
+}
