@@ -2,6 +2,7 @@
   "auto_install_extensions": {
     "catppuccin": true,
     "catppuccin-icons": true,
+    "toml": true,
   },
 
   "buffer_font_family": "JetBrainsMono Nerd Font",
