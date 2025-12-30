@@ -15,7 +15,7 @@ window {
     border: 2;
     border-color: #cba6f7;
     border-radius: 8px;
-    font: "JetBrainsMono Nerd Font 12";
+    font: "SF Pro Rounded Medium 12";
     padding: 18px;
     width: 25%;
 }
@@ -40,7 +40,7 @@ scrollbar {
 entry {
     background-color: var(base);
     border-radius: 4px;
-    font: "JetBrainsMono Nerd Font 16";
+    font: "SF Pro Rounded Semibold 16";
     padding: 8px;
     placeholder: "Search for apps...";
     placeholder-color: var(surface0);

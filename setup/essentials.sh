@@ -33,5 +33,8 @@ else
     cd ~/archway
 fi
 
+paru -S --noconfirm --needed \
+    apple-fonts
+
 echo ""
 echo "Essential tools installed!"
