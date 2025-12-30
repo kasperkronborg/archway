@@ -15,7 +15,8 @@ sudo pacman -S --noconfirm --needed \
     firefox
 
 paru -S --noconfirm --needed \
-    1password
+    1password \
+    phinger-cursors
 
 echo "Deploying Hyprland configuration..."
 cd "$ARCHWAY_DIR"
